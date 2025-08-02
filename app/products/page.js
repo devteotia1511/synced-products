@@ -100,9 +100,9 @@ export default function ProductsPage() {
                 ₹{(product.price * 86).toFixed(0)}
               </p>
               <p className="text-sm text-yellow-600">⭐ {product.rating}</p>
-              <div className="flex gap-2 pt-2">
-                <Button variant="outline">Add to Cart</Button>
-                <Button>Buy Now</Button>
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                <Button variant="outline" className="w-full sm:w-auto">Add to Cart</Button>
+                <Button className="w-full sm:w-auto">Buy Now</Button>
               </div>
             </Card>
           ))}
